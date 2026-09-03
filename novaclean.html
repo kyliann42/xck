@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NovaClean+ Lavage auto & canapé</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="site">
+        <header>
+            <div class="logo">
+                <div class="logo-badge" aria-hidden="true">NC+</div>
+                <div>
+                    <h1>NovaClean+ Lavage auto & canapé</h1>
+                    <p class="lead">Nettoyage professionnel — DÉPLACEMENT A DOMICILE GRATUIT</p>
+                </div>
+            </div>
+            <nav style="margin-left:auto;display:flex;gap:12px;align-items:center">
+                <a href="contact.html"
+                    style="color:inherit;text-decoration:none;border:1px solid rgba(255,255,255,0.04);padding:8px 10px;border-radius:8px">Contact
+                    & Réservation</a>
+                <a href="zone.html"
+                    style="color:inherit;text-decoration:none;border:1px solid rgba(255,255,255,0.04);padding:8px 10px;border-radius:8px">Zone
+                    d'activité</a>
+            </nav>
+        </header>
+
+        <main class="hero">
+            <section class="card intro">
+                <h2>Remise à neuf de vos véhicules et canapés</h2>
+                <p class="lead">Nos équipes utilisent des produits professionnels et des techniques douces pour
+                    préserver vos tissus et surfaces. Résultats visibles dès la première séance.</p>
+
+                <div class="services">
+                    <div class="service">
+                        <h3>Lavage auto</h3>
+                        <p>-Aspiration complète</p>
+                        <p>-Shampoing tissus, traitement odeurs, tapis et moquettes</p>
+                        <p>-Plastiques & tableau de bord</p>
+                        <p>-Désinfection de l'habitacle</p>
+                    </div>
+                    <div class="service">
+                        <h3>Canapés & tissus</h3>
+                        <p>-Élimination des taches</p>
+                        <p>-Nettoyage en profondeur par injecteur-extracteur</p>
+
+                    </div>
+                </div>
+            </section>
+
+            <aside class="card">
+                <h3>Contact & réservation</h3>
+                <form action="https://formsubmit.co/kyliann.victor@email.com" method="POST">
+
+                    <input type="text" name="nom" placeholder="Votre nom" required>
+
+                    <input type="tel" name="telephone" placeholder="Téléphone" required>
+
+                    <input type="email" name="email" placeholder="Email" required>
+
+                    <select name="prestation">
+                        <option value="Lavage auto complet">
+                            Lavage auto complet
+                        </option>
+                        <option value="Nettoyage intérieur">
+                            Nettoyage intérieur
+                        </option>
+                    </select>
+
+                    <textarea name="details" placeholder="Détails (optionnel)"></textarea>
+
+                    <button type="submit">Envoyer</button>
+
+                </form>
+                <p style="margin-top:12px;color:var(--muted);font-size:13px">Ou appelez-nous: <strong>07 80 01 39 36</strong></p>
+            </aside>
+        </main>
+
+        <footer>
+            © <span id="year"></span> NovaClean+ — Tous droits réservés
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

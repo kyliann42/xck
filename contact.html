@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact & Réservation — NovaClean+</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="site" style="padding:36px 16px;">
+        <header style="margin-bottom:18px;display:flex;align-items:center;gap:12px">
+            <div class="logo-badge">NC+</div>
+            <div>
+                <h1>Contact & Réservation</h1>
+                <p class="lead">Remplissez le formulaire ou appelez-nous pour réserver.</p>
+            </div>
+        </header>
+
+        <main style="display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start">
+            <section class="card">
+                <h2>Réserver une intervention</h2>
+                <p class="lead">Choisissez votre service et laissez vos coordonnées.</p>
+                <form action="https://formsubmit.co/kyliann.victor@email.com" method="POST">
+
+                    <input type="text" name="nom" placeholder="Votre nom" required>
+
+                    <input type="tel" name="telephone" placeholder="Téléphone" required>
+
+                    <input type="email" name="email" placeholder="Email" required>
+
+                    <select name="prestation">
+                        <option value="Lavage auto complet">
+                            Lavage auto complet
+                        </option>
+                        <option value="Nettoyage intérieur">
+                            Nettoyage intérieur
+                        </option>
+                    </select>
+
+                    <textarea name="details" placeholder="Détails (optionnel)"></textarea>
+
+                    <button type="submit">Envoyer</button>
+
+                </form>
+            </section>
+
+            <aside class="card">
+                <h3>Infos utiles</h3>
+                <p style="color:var(--muted)">Téléphone: <strong>07 80 01 39 36</strong></p>
+                <p style="color:var(--muted)">Email: <strong>NovaClean82@gmail.com</strong></p>
+                <p style="color:var(--muted)">Horaires: Lun-Sam 8:00–19:00</p>
+            </aside>
+        </main>
+
+        <footer>
+            <a href="novaclean.html" style="color:var(--muted);text-decoration:none">Retour</a>
+        </footer>
+    </div>
+</body>
+
+</html>
