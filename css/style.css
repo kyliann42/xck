@@ -15,7 +15,7 @@ body {
 }
 
 body {
-  background: linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 70%);
+  background: var(--bg2);
   color: #e6f0fb;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
