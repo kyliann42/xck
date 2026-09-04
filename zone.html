@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="site" style="padding:36px 16px;">
+    <div class="site zone-site">
         <header style="margin-bottom:18px;display:flex;align-items:center;gap:12px">
             <div class="logo-badge">NC+</div>
             <div>
@@ -25,11 +25,11 @@
                 <h2>Carte et liste des villes</h2>
                 <p class="lead">Zone principale: rayon de 40 km autour de notre base.</p>
 
-                <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:12px">
-                    <ul style="flex:1;min-width:220px">
+                <div class="zone-content">
+                    <ul class="zone-list">
                         <li>Si vous souhaitez un service dans une ville non listée, contactez-nous pour discuter de votre demande.</li>
                     </ul>
-                    <div style="flex:2;min-width:260px">
+                    <div class="map-container">
                         <!-- Exemple d'iframe Google Maps (ajustez l'embed si vous avez une adresse) -->
                         <iframe src="https://maps.google.com/maps?q=Montauban,France&z=12&output=embed" width="100%"
                             height="300" style="border:0;border-radius:8px" allowfullscreen="" loading="lazy"></iframe>
@@ -38,7 +38,7 @@
             </section>
         </main>
 
-        <footer style="margin-top:18px">
+        <footer class="zone-footer">
             <a href="index.html" style="color:var(--muted);text-decoration:none">Retour</a>
         </footer>
     </div>

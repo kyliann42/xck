@@ -65,8 +65,18 @@ body {
   max-width: 1100px;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .contact-site {
   max-width: 1100px;
+}
+
+.zone-site {
+  padding: 36px 16px;
 }
 
 /* HEADER */
@@ -108,6 +118,7 @@ header nav a:focus-visible {
 }
 
 .theme-toggle {
+  flex: 0 0 auto;
   width: 48px;
   height: 28px;
   margin-left: var(--space-2);
@@ -179,6 +190,32 @@ p.lead {
 
 .contact-header h1 {
   text-align: left;
+}
+
+.zone-content {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.zone-list {
+  flex: 1 1 220px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.map-container {
+  flex: 2 1 260px;
+  min-width: 0;
+}
+
+.map-container iframe {
+  display: block;
+}
+
+.zone-footer {
+  margin-top: 18px;
 }
 
 .contact-layout {
@@ -462,6 +499,25 @@ footer {
   }
 
   header {
+    justify-content: space-between;
+  }
+
+  header .logo {
+    max-width: 100%;
+  }
+
+  header nav {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px !important;
+  }
+
+  header nav a {
+    margin-left: 0;
+  }
+
+  header {
     margin-bottom: 40px;
   }
 
@@ -489,15 +545,53 @@ footer {
 
 @media (max-width: 600px) {
   body {
-    padding: 35px 16px;
+    padding: 24px 12px;
   }
 
   header {
+    flex-wrap: wrap;
+    gap: 16px;
     margin-bottom: 32px;
+  }
+
+  .logo,
+  .contact-header {
+    width: 100%;
+  }
+
+  .logo {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .logo > div:last-child {
+    min-width: 0;
+  }
+
+  header nav {
+    position: static;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  header nav a {
+    flex: 1 1 140px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  header nav .theme-toggle {
+    margin-left: 0;
   }
 
   .contact-header {
     align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .contact-header > div:nth-child(2) {
+    flex: 1;
+    min-width: 0;
   }
 
   .contact-header h1 {
@@ -520,6 +614,24 @@ footer {
 
   .card {
     padding: 24px;
+  }
+
+  .intro h2 {
+    font-size: 24px;
+  }
+
+  p.lead {
+    font-size: 17px;
+  }
+
+  .cta .btn,
+  form button {
+    width: 100%;
+  }
+
+  iframe {
+    min-width: 0;
+    height: 240px;
   }
 
   .cta {
