@@ -57,26 +57,30 @@
                 <h3>Contact & réservation</h3>
                 <form action="https://formsubmit.co/kyliann.victor@gmail.com" method="POST">
 
-                    <input type="text" name="nom" placeholder="Votre nom" required>
+    <input type="hidden" name="_next" value="https://kyliann42.github.io/">
+    <input type="hidden" name="_subject" value="Nouvelle demande - Lavage auto">
+    <input type="hidden" name="_template" value="table">
 
-                    <input type="tel" name="telephone" placeholder="Téléphone" required>
+    <input type="text" name="nom" placeholder="Votre nom" required>
 
-                    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="telephone" placeholder="Téléphone" required>
 
-                    <select name="prestation">
-                        <option value="Lavage auto complet">
-                            Lavage auto complet
-                        </option>
-                        <option value="Nettoyage intérieur">
-                            Nettoyage intérieur
-                        </option>
-                    </select>
+    <input type="email" name="email" placeholder="Email" required>
 
-                    <textarea name="details" placeholder="Détails (optionnel)"></textarea>
+    <select name="prestation">
+        <option value="Lavage auto complet">
+            Lavage auto complet
+        </option>
+        <option value="Nettoyage intérieur">
+            Nettoyage intérieur
+        </option>
+    </select>
 
-                    <button type="submit">Envoyer</button>
+    <textarea name="details" placeholder="Détails (optionnel)"></textarea>
 
-                </form>
+    <button type="submit">Envoyer</button>
+
+</form>
                 <p style="margin-top:12px;color:var(--muted);font-size:13px">Ou appelez-nous: <strong>07 80 01 39 36</strong></p>
             </aside>
         </main>
