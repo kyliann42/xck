@@ -63,6 +63,7 @@ body {
 .site {
   width: 100%;
   max-width: 1100px;
+  min-width: 0;
 }
 
 *,
@@ -168,6 +169,7 @@ h1 {
   font-weight: 600;
   letter-spacing: -0.022em;
   margin: 0 0 6px;
+  overflow-wrap: anywhere;
 }
 
 p.lead {
@@ -177,6 +179,7 @@ p.lead {
   line-height: 1.42;
   letter-spacing: 0.011em;
   max-width: 60ch;
+  overflow-wrap: anywhere;
 }
 
 /* HERO */
@@ -571,13 +574,17 @@ footer {
   header nav {
     position: static;
     width: 100%;
-    justify-content: flex-start;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 8px !important;
   }
 
   header nav a {
-    flex: 1 1 140px;
+    min-width: 0;
     text-align: center;
     margin-left: 0;
+    padding: 8px 4px !important;
   }
 
   header nav .theme-toggle {
@@ -634,6 +641,43 @@ footer {
     height: 240px;
   }
 
+
+@media (max-width: 400px) {
+  body {
+    padding: 16px 8px;
+  }
+
+  .zone-site {
+    padding: 24px 8px;
+  }
+
+  .card {
+    padding: 16px;
+    border-radius: var(--radius-md);
+  }
+
+  h1,
+  .contact-header h1 {
+    font-size: 24px;
+  }
+
+  p.lead,
+  .intro .lead {
+    font-size: 15px;
+  }
+
+  .intro h2 {
+    font-size: 21px;
+  }
+
+  .contact-header > div:nth-child(2) {
+    flex-basis: calc(100% - 58px);
+  }
+
+  .zone-content {
+    gap: 12px;
+  }
+}
   .cta {
     flex-direction: column;
   }
